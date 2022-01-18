@@ -1,0 +1,24 @@
+# hyperledger fabric-samples repository
+# https://github.com/hyperledger/fabric-samples
+fabric-samples/
+
+# Dataset
+rawdata/
+search_data/
+
+# DB
+db.sqlite3
+
+# modules
+node_modules/
+pkg/
+vendor/
+
+# binaries
+main
+*.class
+
+# temporary dirs
+CUB/
+wallet/
+__pycache__/

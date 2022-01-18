@@ -1,0 +1,3 @@
+fabric-samples repository path needs in...
+- scirpts/startFabric.sh
+- hlf_application/application-util-javascript/AppUtil.js

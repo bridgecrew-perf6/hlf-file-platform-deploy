@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ERC Demo</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white" onclick="location.href={% url 'index'%};" style="cursor: pointer;">
+                            <!-- Page heading--> 
+                            <h1 class="mb-2" id='search_title'><a style="color:white;">ERC Demo main page</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> 
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 btn btn-light" style="border-color: #97b1dae1; border-width: 0.1rem; border-radius: 1rem;" onclick="location.href={% url 'upload'%};">
+                            <div class="features-icons-icon d-flex"><i class="bi-cloud-upload m-auto text-primary"></i></div>
+                            <h3>Upload data</h3>
+                            <p class="lead mb-0">Upload either CUB-200-2011 or TREC-COVID data to HDFS.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 btn btn-light" style="border-color: #97b1dae1; border-width: 0.1rem; border-radius: 1rem;" onclick="location.href={% url 'queryHistory'%};">
+                            <div class="features-icons-icon d-flex"><i class="bi-file-text m-auto text-primary"></i></div>
+                            <h3>Data logs</h3>
+                            <p class="lead mb-0">Data log is available from blockchain storage.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 btn btn-light" style="border-color: #97b1dae1; border-width: 0.1rem; border-radius: 1rem;" onclick="location.href={% url 'queryData'%};">
+                            <div class="features-icons-icon d-flex"><i class="bi-search m-auto text-primary"></i></div>
+                            <h3>Search data</h3>
+                            <p class="lead mb-0">Search data based on their metadata.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- Footer-->
+        <br>
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; InfoLab, KAIST 2021. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
